@@ -116,7 +116,7 @@ include "controlador/eliminar_CP.php"; //conexion de eliminar//
   </thead>
   <tbody>
 
-    <?php
+  <?php
     include "modelo/conexion_CP.php";
     $sql=$conexion_CP->query(" SELECT * FROM cosecha_y_produccion");
     while ($datos = $sql->fetch_object()) { ?>
@@ -149,7 +149,9 @@ include "controlador/eliminar_CP.php"; //conexion de eliminar//
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+    <br>
+    <a href="../Cosecha_Producción/Plagas_Enfermedades/Plagas_Enfermedades.php">Plagas y Enfermedades</a>
+
     <br>
     <br>
 
