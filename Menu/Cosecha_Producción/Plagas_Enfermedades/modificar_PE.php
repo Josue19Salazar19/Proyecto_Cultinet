@@ -4,7 +4,7 @@ include "modelo/conexion_PE.php";
 
 $id = $_GET["id"];
 
-$sql = $conexion_PE->query(" select * from plagas_y_enfermedades where Identificador_de_siembra='$id' ");
+$sql = $conexion_PE->query(" select * from plagas_y_enfermedades where identificador_de_la_siembra='$id' ");
 
 
 ?>
@@ -31,8 +31,8 @@ while ($datos = $sql->fetch_object()) { ?>
 
 <div class="mb-3">
 
-<label for="exampleInputEmail1" class="form-label">Identificador de siembra</label>
-<input type="text" class="form-control" name="Identificador_de_siembra" value="<?= $datos->Identificador_de_siembra?>">
+<label for="exampleInputEmail1" class="form-label">Identificador de la siembra</label>
+<input type="text" class="form-control" name="identificador_de_la_siembra" value="<?= $datos->identificador_de_la_siembra?>">
 
 </div>
 
@@ -46,7 +46,7 @@ while ($datos = $sql->fetch_object()) { ?>
 <div class="mb-3">
 
 <label for="exampleInputEmail1" class="form-label">Tipo de plaga o enfermedad</label>
-<input type="text" class="form-control" name="Tipo_de_plaga_o_enfermedad" value="<?= $datos->Numero_de_Tipo_de_plaga_o_enfermedadracimos?>">
+<input type="text" class="form-control" name="Tipo_de_plaga_o_enfermedad" value="<?= $datos->Tipo_de_plaga_o_enfermedad?>">
 
 </div>
 

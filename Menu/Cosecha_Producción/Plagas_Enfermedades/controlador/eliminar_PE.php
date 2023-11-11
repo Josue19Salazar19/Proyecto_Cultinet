@@ -11,7 +11,7 @@ if (isset($_SESSION['id'])) {
 }
 if (!empty($_GET["id"])) {
     $id = $_GET["id"];
-    $sql = $conexion_PE->query("DELETE FROM plagas_y_enfermedades WHERE Identificador_de_siembra='$id'");
+    $sql = $conexion_PE->query("DELETE FROM plagas_y_enfermedades WHERE identificador_de_la_siembra='$id'");
     if ($sql == 1) {
         echo '<div class="alert alert-success">Campo eliminada correctamente</div>';
     } else {

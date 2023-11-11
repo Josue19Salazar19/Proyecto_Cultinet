@@ -101,7 +101,7 @@ if (isset($_SESSION['id'])) {
                 <div class="segundaParteCard">
                     <h2>Notificaciones y Alertas</h2>
                     <ul>
-                        <li><a href="../Menu/Datos_Meteorologico/Datos_Meteorologico.php">Emergencias Naturales</a></li>
+                        <li><a href="../Menu/Emergencias_Ambientales/Emergencias_Ambientales.php">Emergencias Ambientales</a></li>
                     </ul>
                 </div>
             </div>

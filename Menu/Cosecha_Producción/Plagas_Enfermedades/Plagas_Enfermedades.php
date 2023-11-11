@@ -31,8 +31,8 @@ include "controlador/eliminar_PE.php"; //conexion de eliminar//
   <!-- ----------------------------------------------------------------------------------------------------------- -->
   <div class="mb-3">
 
-    <label for="exampleInputEmail1" class="form-label">Identificador de siembra</label>
-    <input type="text" class="form-control" name="Identificador_de_siembra">
+    <label for="exampleInputEmail1" class="form-label">Identificador de la siembra</label>
+    <input type="text" class="form-control" name="identificador_de_la_siembra">
    
   </div>
   <!-- ----------------------------------------------------------------------------------------------------------- -->
@@ -96,7 +96,7 @@ include "controlador/eliminar_PE.php"; //conexion de eliminar//
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Identificador de siembra</th>
+      <th scope="col">Identificador de la siembra</th>
       <th scope="col">Fecha</th>
       <th scope="col">Tipo de plaga o enfermedad</th>
       <th scope="col">Cantidad de plantas afectadas</th>
@@ -116,7 +116,7 @@ include "controlador/eliminar_PE.php"; //conexion de eliminar//
     
     <tr>
 
-      <td><?= $datos->Identificador_de_siembra ?></td>
+      <td><?= $datos->identificador_de_la_siembra ?></td>
       <td><?= $datos->Fecha ?></td>
       <td><?= $datos->Tipo_de_plaga_o_enfermedad ?></td>
       <td><?= $datos->Cantidad_de_plantas_afectadas ?></td>
@@ -126,8 +126,8 @@ include "controlador/eliminar_PE.php"; //conexion de eliminar//
       <td><?= $datos->Observaciones ?></td>
 
       <td>
-      <a href="modificar_PE.php?id=<?= $datos->Identificador_de_siembra ?>" class="btn btn-small btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-      <a href="Plagas_Enfermedades.php?id=<?= $datos->Identificador_de_siembra ?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+      <a href="modificar_PE.php?id=<?= $datos->identificador_de_la_siembra?>" class="btn btn-small btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+      <a href="Plagas_Enfermedades.php?id=<?= $datos->identificador_de_la_siembra?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash-can"></i></a>
       </td>
 
     </tr>
