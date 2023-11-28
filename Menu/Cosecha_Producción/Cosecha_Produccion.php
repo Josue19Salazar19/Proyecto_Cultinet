@@ -56,7 +56,7 @@ include "controlador/eliminar_CP.php"; //conexion de eliminar//
   <div class="mb-3">
 
     <label for="exampleInputEmail1" class="form-label">Cantidad por unidad</label>
-    <input type="number" class="form-control" name="Cantidad_en_kg">
+    <input type="number" class="form-control" name="Cantidad_por_unidad">
    
   </div>
 
@@ -87,7 +87,7 @@ include "controlador/eliminar_CP.php"; //conexion de eliminar//
   <!-- ----------------------------------------------------------------------------------------------------------- -->
   <div class="mb-3">
 
-    <label for="exampleInputEmail1" class="form-label">Venta total</label>
+    <label for="exampleInputEmail1" class="form-label">Total de ingresos</label>
     <input type="text" class="form-control" value="$" name="Total_de_ingresos" >
 
   </div>
@@ -162,7 +162,6 @@ include "controlador/eliminar_CP.php"; //conexion de eliminar//
       <th scope="col">Precio de venta</th>
       <th scope="col">Total de ingresos</th>
       <th scope="col">Fecha de cosecha</th>
-      <th scope="col">Numero de racimos</th>
       <th scope="col">Tamaño promedio</th>
       <th scope="col">Estado de madurez</th>
       <th scope="col">Cantidad descartado</th>
@@ -180,13 +179,12 @@ include "controlador/eliminar_CP.php"; //conexion de eliminar//
     
     <tr>
 
-      <td><?= $datos->Cantidad_en_kg ?></td>
+      <td><?= $datos->Cantidad_por_unidad ?></td>
       <td><?= $datos->Cliente ?></td>
       <td><?= $datos->Cantidad_de_venta ?></td>
       <td><?= $datos->Precio_de_venta ?></td>
       <td><?= $datos->Total_de_ingresos ?></td>
       <td><?= $datos->Fecha_de_cosecha ?></td>
-      <td><?= $datos->Numero_de_racimos ?></td>
       <td><?= $datos->Tamaño_promedio ?></td>
       <td><?= $datos->Estado_de_madurez ?></td>
       <td><?= $datos->Cantidad_descartado ?></td>
@@ -195,8 +193,7 @@ include "controlador/eliminar_CP.php"; //conexion de eliminar//
       <td><?= $datos->Observaciones ?></td>
 
       <td>
-      <a href="modificar_CP.php?id=<?= $datos->Cantidad_en_kg ?>" class="btn btn-small"><i class="fa-solid fa-pen-to-square"></i></a>
-      <a href="Cosecha_Produccion.php?id=<?= $datos->Cantidad_en_kg ?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+      <a href="modificar_CP.php?id=<?= $datos->Cantidad_por_unidad ?>" class="btn btn-small"><i class="fa-solid fa-pen-to-square"></i></a>
 
       </td>
 

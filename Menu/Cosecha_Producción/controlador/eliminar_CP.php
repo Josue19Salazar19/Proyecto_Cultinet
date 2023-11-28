@@ -11,7 +11,7 @@ if (isset($_SESSION['id'])) {
 }
 if (!empty($_GET["id"])) {
     $id = $_GET["id"];
-    $sql = $conexion_CP->query("DELETE FROM cosecha_y_produccion WHERE Cantidad_en_kg='$id'");
+    $sql = $conexion_CP->query("DELETE FROM cosecha_y_produccion WHERE Cantidad_por_unidad='$id'");
     if ($sql == 1) {
         echo '<div class="alert alert-success">Campo eliminada correctamente</div>';
     } else {

@@ -4,7 +4,7 @@ include "modelo/conexion_CP.php";
 
 $id = $_GET["id"];
 
-$sql = $conexion_CP->query(" select * from cosecha_y_produccion where Cantidad_en_kg='$id' ");
+$sql = $conexion_CP->query(" select * from cosecha_y_produccion where Cantidad_por_unidad='$id' ");
 
 
 ?>
@@ -32,7 +32,7 @@ while ($datos = $sql->fetch_object()) { ?>
 <div class="mb-3">
 
 <label for="exampleInputEmail1" class="form-label">Cantidad por unidad</label>
-<input type="number" class="form-control" name="Cantidad_en_kg" value="<?= $datos->Cantidad_en_kg?>">
+<input type="number" class="form-control" name="Cantidad_por_unidad" value="<?= $datos->Cantidad_por_unidad?>">
 
 </div>
 
