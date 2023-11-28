@@ -3,21 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Parcela </title>
+    <title>Registro de Parcela</title>
     <link rel="icon" type="../../Favicon.png" href="../../Favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1fef534ddd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Registro_parcela.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    
-<h1 class="text-center p-2">Registro de Parcela</h1>  
+
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <header class="header">
+        <div class="partOne">
+            <img src="../logo.png" alt="" class="logoImage" href="">
+        </div>
+        <nav class="menu">
+            
+            <a href="../../Vista/Vista_principal.php">Atras</a>
+            
+        </nav>
+    </header>
+
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+
 
 <div class="container-fluid row">
 
 <div class="col-8 p-4">
 
 <table class="table caption-top">
-  <h3>Información de la Parcela</h3>
+  <h1>Información de la Parcela</h1>
   <thead>
     <tr>
       <th scope="col">Nombre del propietario</th>
@@ -57,11 +77,8 @@
 </div>
 
 </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
-    
-    <a href="../../Vista/Vista_principal.php">Atras</a>
-
-
   </body>
 </html>

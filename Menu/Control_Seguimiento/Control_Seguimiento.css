@@ -75,9 +75,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
 }
-input[type="text"],input[type="date"],input[type="number"] {
+input[type="text"],input[type="date"] {
     border: 1px solid black;
 }
 label {

@@ -31,22 +31,47 @@ while ($datos = $sql->fetch_object()) { ?>
 
 <div class="mb-3">
 
-<label for="exampleInputEmail1" class="form-label">Cantidad en kg</label>
+<label for="exampleInputEmail1" class="form-label">Cantidad por unidad</label>
 <input type="number" class="form-control" name="Cantidad_en_kg" value="<?= $datos->Cantidad_en_kg?>">
 
 </div>
+
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+<div class="mb-3">
+
+<label for="exampleInputEmail1" class="form-label">Cliente</label>
+<input type="text" class="form-control" name="Cliente" value="<?= $datos->Cliente?>">
+
+</div>
+
+<div class="mb-3">
+
+<label for="exampleInputEmail1" class="form-label">Cantidad de venta</label>
+<input type="number" class="form-control" name="Cantidad_de_venta" value="<?= $datos->Cantidad_de_venta?>">
+
+</div>
+
+<div class="mb-3">
+
+<label for="exampleInputEmail1" class="form-label">Precio de venta</label>
+<input type="text" class="form-control" name="Precio_de_venta" value="<?= $datos->Precio_de_venta?>">
+
+</div>
+
+<div class="mb-3">
+
+<label for="exampleInputEmail1" class="form-label">Total de ingresos</label>
+<input type="text" class="form-control" name="Total_de_ingresos" value="<?= $datos->Total_de_ingresos?>">
+
+</div>
+
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
 
 <div class="mb-3">
 
 <label for="exampleInputEmail1" class="form-label">Fecha de cosecha</label>
 <input type="date" class="form-control" name="Fecha_de_cosecha" value="<?= $datos->Fecha_de_cosecha?>">
-
-</div>
-
-<div class="mb-3">
-
-<label for="exampleInputEmail1" class="form-label">Numero de racimos</label>
-<input type="number" class="form-control" name="Numero_de_racimos" value="<?= $datos->Numero_de_racimos?>">
 
 </div>
 

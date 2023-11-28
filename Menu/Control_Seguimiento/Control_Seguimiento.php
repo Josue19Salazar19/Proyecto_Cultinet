@@ -7,9 +7,31 @@
     <link rel="icon" type="../../Favicon.png" href="../../Favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1fef534ddd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Control_Seguimiento.css">
 </head>
 <body>
     
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <header class="header">
+        <div class="partOne">
+            <img src="../logo.png" alt="" class="logoImage" href="">
+        </div>
+        <nav class="menu">
+            
+        <a href="../../Vista/Vista_principal.php">Atras</a>
+            
+        </nav>
+    </header>
+
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
 <h1 class="text-center p-2">Control y Seguimiento</h1>  
 
 <?php
@@ -90,8 +112,7 @@ include "controlador/eliminar_CS.php"; //conexion de eliminar//
       <td><?= $datos->comentario ?></td>
 
       <td>
-      <a href="modificar_CS.php?id=<?= $datos->identificador_de_siembra ?>" class="btn btn-small btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-      <a href="Control_Seguimiento.php?id=<?= $datos->identificador_de_siembra ?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+      <a href="modificar_CS.php?id=<?= $datos->identificador_de_siembra ?>" class="btn btn-small"><i class="fa-solid fa-pen-to-square"></i></a>
       </td>
 
     </tr>
@@ -105,11 +126,7 @@ include "controlador/eliminar_CS.php"; //conexion de eliminar//
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <br>
-    <br>
 
-      <a href="../../Vista/Vista_principal.php">Atras</a>
 
 
 

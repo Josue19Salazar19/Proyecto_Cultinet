@@ -30,7 +30,6 @@ if (isset($_SESSION['id'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"
         integrity="sha512-6HrPqAvK+lZElIZ4mZ64fyxIBTsaX5zAFZg2V/2WT+iKPrFzTzvx6QAsLW2OaLwobhMYBog/+bvmIEEGXi0p1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="graficosObtenidos.js"></script>
 </head>
 
 <body>
@@ -55,9 +54,6 @@ if (isset($_SESSION['id'])) {
             <p class="city"><?php echo $ubicacion; ?></p>
             <p>Temperatura actual:</p>
             <div id="temperatura"></div>
-        </div>
-        <div class="graficaUno">
-            <canvas id="miGrafico" width="300px" height="300px"></canvas>
         </div>
     </div>
 
